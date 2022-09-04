@@ -1,0 +1,2 @@
+class Pessoa implements InterfacePessoa{
+}
