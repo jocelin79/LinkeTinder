@@ -12,7 +12,7 @@ static void main(String[] args) {
           email: "rita@mail",
           cpf: "20397108570",
           idade: 21,
-          estado: "Sergipe",
+          estado: "Alagoas",
           cep: 41040200,
           descricao: "descricao...", competencias: ["Angular"])
   Candidato c3 = new Candidato(
