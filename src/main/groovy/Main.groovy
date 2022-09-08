@@ -1,4 +1,5 @@
 static void main(String[] args) {
+
   Candidato c1 = new Candidato(
           nome: "Luan",
           email: "luan@mail",
@@ -40,9 +41,7 @@ static void main(String[] args) {
           cep: 45040200,
           descricao: "descricao...", competencias: ["Python"])
   List candidatos = [c1, c2, c3, c4, c5]
-  for(c in candidatos) {
-    println(c)
-  }
+
 
   Empresa e1 = new Empresa(
           nome: "Sopa Boa",
@@ -85,7 +84,63 @@ static void main(String[] args) {
           cep: 95040200,
           descricao: "descricao...", competencias: ["Groovy"])
   List empresas = [e1, e2, e3, e4, e5]
-  for(e in empresas) {
-    println(e)
+
+  boolean on = true;
+
+  while (on) {
+    print("Se deseja listar os Candidatos, digite 1;\n" +
+            "Se deseja listar as Empresas, digite 2;\n" +
+            "Se deseja adicionar um novo Candidato, digite 3;\n" +
+            "Se deseja adicionar uma nova Empresa, digite 4;\n" +
+            "Se deseja testar a adição de Candidato, digite 5;\n" +
+            "Se deseja testar a adição de Empresa, digite 6;\n" +
+            "Caso deseje Finalizar o atendimento, digite 0.\n" +
+            "Digite aqui:")
+
+    Scanner s = new Scanner(System.in)
+    String response = s.nextLine()
+
+    switch (response) {
+      case "1":
+        for(c in candidatos) {
+          println(c)
+        }
+        break
+      case "2":
+        for(e in empresas) {
+        println(e)
+      }
+        break
+      case "3":
+        addCandidato(candidatos, c3)
+        break
+      case "4":
+        addEmpresa(empresas, e3)
+        break
+      case "5":
+        ListTest teste = new ListTest()
+        boolean resultado
+        resultado = teste.testeAdicionarCandidato()
+        println("Teste bem-sucedido: " + resultado)
+            break
+      case "6":
+        ListTest teste = new ListTest()
+        boolean resultado
+        resultado = teste.testeAdicionarEmpresa()
+        println("Teste bem-sucedido: " + resultado)5
+            break
+      case "0":
+        on = false
+        break
+    }
   }
+
+}
+
+static void addCandidato(List list, Candidato c) {
+  list.add(c)
+}
+
+static void addEmpresa(List list, Empresa e) {
+  list.add(e)
 }
