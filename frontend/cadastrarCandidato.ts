@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
     const inputComp = document.querySelector("#input-comp");
     const inputDescription= document.querySelector("#input-description");
 
-    
+
     let taskList: any[];
 
     if (JSON.parse(localStorage.getItem('listaDeCandidatos')!) != null) {
@@ -20,6 +20,36 @@ window.addEventListener('load', () => {
 
     from?.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        //Validação de Input
+
+        let regexpNome: RegExp = /[A-z]+\s/;
+        let regexpEmail: RegExp = /\w+@\w+\.\w+\.?\w+?/;
+        let regexpCpf: RegExp = /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\.?\-?[0-9]{2}/;
+        let regexpIdade: RegExp =/[0-9]{2}/;
+        let regexpEstado: RegExp = /[A-z]+\s?/;
+        let regexpCep: RegExp = /[0-9]{5}\-?[0-9]{3}/;
+        let regexpComp: RegExp = /java|groovy|angular|mysql/;
+
+        if (
+            regexpNome.test(inputNome?.value)&&regexpEmail.test(inputEmail?.value)&&
+            regexpCpf.test(inputCpf?.value)&&regexpIdade.test(inputIdade?.value)&&
+            regexpEstado.test(inputEstado?.value)&&regexpCep.test(inputCep?.value)&&
+            regexpComp.test(inputComp?.value))
+        {
+            alert("Cadastro Realizado!")
+        } else {
+            alert(`
+                Nome: ${regexpNome.test(inputNome?.value)? "Válido" : "Inválido"}\n
+                Email: ${regexpEmail.test(inputEmail?.value)? "Válido" : "Inválido"}\n
+                CPF: ${regexpCpf.test(inputCpf?.value)? "Válido" : "Inválido"}\n
+                Idade: ${regexpIdade.test(inputIdade?.value)? "Válido" : "Inválido"}\n
+                Estado: ${regexpEstado.test(inputEstado?.value)? "Válido" : "Inválido"}\n
+                Cep: ${regexpCep.test(inputCep?.value)? "Válido" : "Inválido"}\n
+                Comp: ${regexpComp.test(inputComp?.value)? "Válido" : "Inválido"}\n
+            `);
+            return
+        }
         
         let id: number = taskList.length + 1;
 
@@ -34,11 +64,6 @@ window.addEventListener('load', () => {
         task[6] = inputComp?.value;
         task[7] = inputDescription?.value;
         task[8] = id;
-
-        if(!task[0]) {
-            alert("Please fill out the task");
-            return;
-        }
 
         taskList.push(task);
         

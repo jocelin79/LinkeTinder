@@ -20,6 +20,36 @@ window.addEventListener('load', () => {
 
     from?.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        //Validação de Input
+
+        let regexpNome: RegExp = /[A-z]+\s/;
+        let regexpEmail: RegExp = /\w+@\w+\.\w+\.?\w+?/;
+        let regexpCnpj: RegExp = /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\.?\-?[0-9]{2}/;
+        let regexpPais: RegExp = /[A-z]+\s?/;
+        let regexpEstado: RegExp = /[A-z]+\s?/;
+        let regexpCep: RegExp = /[0-9]{5}\-?[0-9]{3}/;
+        let regexpComp: RegExp = /java|groovy|angular|mysql/;
+
+        if (
+            regexpNome.test(inputNome?.value)&&regexpEmail.test(inputEmail?.value)&&
+            regexpCnpj.test(inputCnpj?.value)&&regexpPais.test(inputPais?.value)&&
+            regexpEstado.test(inputEstado?.value)&&regexpCep.test(inputCep?.value)&&
+            regexpComp.test(inputComp?.value))
+        {
+            alert("Cadastro Realizado!")
+        } else {
+            alert(`
+                Nome: ${regexpNome.test(inputNome?.value)? "Válido" : "Inválido"}\n
+                Email: ${regexpEmail.test(inputEmail?.value)? "Válido" : "Inválido"}\n
+                CNPJ: ${regexpCnpj.test(inputCnpj?.value)? "Válido" : "Inválido"}\n
+                País: ${regexpPais.test(inputPais?.value)? "Válido" : "Inválido"}\n
+                Estado: ${regexpEstado.test(inputEstado?.value)? "Válido" : "Inválido"}\n
+                Cep: ${regexpCep.test(inputCep?.value)? "Válido" : "Inválido"}\n
+                Comp: ${regexpComp.test(inputComp?.value)? "Válido" : "Inválido"}\n
+            `);
+            return
+        }
         
         let id: number = taskList.length + 1;
 
@@ -34,11 +64,6 @@ window.addEventListener('load', () => {
         task[6] = inputComp?.value;
         task[7] = inputDescription?.value;
         task[8] = id;
-
-        if(!task[0]) {
-            alert("Please fill out the task");
-            return;
-        }
 
         taskList.push(task);
         
