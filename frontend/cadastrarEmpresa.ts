@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
             alert("Cadastro Realizado!")
         } else {
             alert(`
-                Nome: ${regexpNome.test(inputNome?.value)? "Válido" : "Inválido"}\n
+                Nome: ${regexpNome.test(inputNome?.value)? "Válido!" : "Inválido"}\n
                 Email: ${regexpEmail.test(inputEmail?.value)? "Válido" : "Inválido"}\n
                 CNPJ: ${regexpCnpj.test(inputCnpj?.value)? "Válido" : "Inválido"}\n
                 País: ${regexpPais.test(inputPais?.value)? "Válido" : "Inválido"}\n
