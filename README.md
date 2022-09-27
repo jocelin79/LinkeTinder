@@ -1,3 +1,5 @@
 # Linketinder - Jocelin Nunes
 ## Modelo Lógico do Software
-<img src="https://imgur.com/a/dNOCNZX" alt="modelo"/>
+<p align="center">
+  <img alt="modelo" src="/modelagem.JPG" width="100%">
+</p>
