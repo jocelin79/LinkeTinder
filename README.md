@@ -1,2 +1,3 @@
 # Linketinder - Jocelin Nunes
-## Modelagem Lógica do Software
+## Modelo Lógico do Software
+<img src="https://imgur.com/a/dNOCNZX" alt="modelo"/>
