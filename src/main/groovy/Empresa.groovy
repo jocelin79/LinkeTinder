@@ -1,11 +1,5 @@
 @groovy.transform.ToString
 class Empresa extends Pessoa{
-   public String nome, email, cnpj, pais, estado
-    Integer cep
-    String descricao
-    List<String> competencias
-
-    static void hello() {
-        println("Hello!")
+   public String nome, email, cnpj, pais_onde_reside, descricao, cep, senha;
     }
 }
