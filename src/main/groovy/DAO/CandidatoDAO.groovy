@@ -29,4 +29,8 @@ class CandidatoDAO {
     }
     return retorno
   }
+  
+  boolean inserir(Candidato candidato) {
+  
+  }
 }
