@@ -2,16 +2,14 @@ import groovy.sql.Sql
 
 class CandidatoDAO {
  
-  def url = 'url do banco criado'
-  def user = 'postgres'
-  def password = 'postgres'
-  def driver = 'org.postgresql.Driver'
+  String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
+  String user = 'postgres'
+  String password = 'postgres'
+  String driver = 'org.postgresql.Driver'
   Sql sql = Sql.newInstance(url, user, password, driver)
 
-  CandidatoDAO() {}
-
   List<Candidato> listar() {
-    List<Candidato> retorno = new ArrayList<>():
+    List<Candidato> retorno = new ArrayList<>();
     sql.query('SELECT * FROM candidato') { resultSet ->
       while (resultSet.next()) {
         Candidato candidato = new Candidato()

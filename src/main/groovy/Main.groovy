@@ -92,7 +92,7 @@ static void main(String[] args) {
             "Se deseja listar as Empresas, digite 2;\n" +
             "Se deseja adicionar um novo Candidato, digite 3;\n" +
             "Se deseja adicionar uma nova Empresa, digite 4;\n" +
-            "Se deseja testar a adição de Candidato, digite 5;\n" +
+            "Se deseja listar os Candidatos do DB, digite 5;\n" +
             "Se deseja testar a adição de Empresa, digite 6;\n" +
             "Caso deseje Finalizar o atendimento, digite 0.\n" +
             "Digite aqui:")
@@ -118,10 +118,8 @@ static void main(String[] args) {
         addEmpresa(empresas, e3)
         break
       case "5":
-        ListTest teste = new ListTest()
-        boolean resultado
-        resultado = teste.testeAdicionarCandidato()
-        println("Teste bem-sucedido: " + resultado)
+        CandidatoDAO candidato = new CandidatoDAO();
+        candidato.listar()
             break
       case "6":
         ListTest teste = new ListTest()
