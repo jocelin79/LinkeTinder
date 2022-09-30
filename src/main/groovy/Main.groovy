@@ -17,20 +17,24 @@ static void main(String[] args) {
 
     switch (response) {
       case "1":
-        for(c in candidatos) {
+        CandidatoDAO candidatoDAO = new CandidatoDAO()
+        List candidato = candidatoDAO.listar()
+        for(c in candidato) {
           println(c)
         }
         break
       case "2":
-        for(e in empresas) {
-        println(e)
-      }
+        EmpresaDAO empresaDAO = new EmpresaDAO()
+        List empresa = empresaDAO.listar()
+        for(c in empresa) {
+          println(c)
+        }
         break
       case "3":
-        addCandidato(candidatos, c3)
+
         break
       case "4":
-        addEmpresa(empresas, e3)
+
         break
       case "5":
         

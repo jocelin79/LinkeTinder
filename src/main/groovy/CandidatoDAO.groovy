@@ -1,8 +1,8 @@
 import groovy.sql.Sql
 
 class CandidatoDAO {
- 
-  String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
+
+  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
   String user = 'postgres'
   String password = 'postgres'
   String driver = 'org.postgresql.Driver'
@@ -16,7 +16,7 @@ class CandidatoDAO {
         candidato.setId(resultSet.getInt("id"))
         candidato.setNome(resultSet.getString("nome"))
         candidato.setSobrenome(resultSet.getString("sobrenome"))
-        candidato.setData_nascimento(resultSet.getString("data_nascimento"))
+        candidato.setData_nascimento(resultSet.getDate("data_nascimento"))
         candidato.setEmail(resultSet.getString("email"))
         candidato.setCpf(resultSet.getString("cpf"))
         candidato.setPais_onde_reside(resultSet.getString("pais_onde_reside"))

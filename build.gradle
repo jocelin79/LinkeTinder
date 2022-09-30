@@ -11,8 +11,7 @@ repositories {
 
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.8'
-    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
 }
 
 test {
