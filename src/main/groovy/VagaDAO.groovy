@@ -3,10 +3,10 @@ import groovy.sql.Sql
 class VagaDAO {
  
   String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
-  String user = 'postgres'
-  String password = 'postgres'
-  String driver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, user, password, driver)
+  String dbUser = 'postgres'
+  String dbPassword = 'postgres'
+  String dbDriver = 'org.postgresql.Driver'
+  Sql sql = Sql.newInstance(url, dbUser, dbPassword, dbDriver)
 
   List<Vaga> listar() {
     List<Vaga> retorno = new ArrayList<>();
