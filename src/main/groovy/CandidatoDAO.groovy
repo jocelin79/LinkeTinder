@@ -3,10 +3,10 @@ import groovy.sql.Sql
 class CandidatoDAO {
 
   String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
-  String user = 'postgres'
-  String password = 'postgres'
-  String driver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, user, password, driver)
+  String bdUser = 'postgres'
+  String bdPassword = 'postgres'
+  String bdDriver = 'org.postgresql.Driver'
+  Sql sql = Sql.newInstance(url, bdUser, bdPassword, bdDriver)
 
   List<Candidato> listar() {
     List<Candidato> retorno = new ArrayList<>();
