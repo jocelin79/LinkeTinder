@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const from = document.querySelector("#new-task-form");
+    const form = document.querySelector("#new-task-form");
     const inputNome = document.querySelector("#input-name");
     const inputEmail = document.querySelector("#input-email");
     const inputCnpj = document.querySelector("#input-cnpj");
@@ -18,10 +18,8 @@ window.addEventListener('load', () => {
         taskList = []
     }
 
-    from?.addEventListener('submit', (e) => {
+    form?.addEventListener('submit', (e) => {
         e.preventDefault();
-
-        //Validação de Input
 
         let regexpNome: RegExp = /[A-z]+\s/;
         let regexpEmail: RegExp = /\w+@\w+\.\w+\.?\w+?/;
