@@ -18,10 +18,8 @@ window.addEventListener('load', () => {
         taskList = []
     }
 
-    from?.addEventListener('submit', (e) => {
+    form?.addEventListener('submit', (e) => {
         e.preventDefault();
-
-        //Validação de Input
 
         let regexpNome: RegExp = /[A-z]+\s/;
         let regexpEmail: RegExp = /\w+@\w+\.\w+\.?\w+?/;
