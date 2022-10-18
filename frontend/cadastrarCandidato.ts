@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const from = document.querySelector("#new-task-form");
+    const form = document.querySelector("#new-task-form");
     const inputNome = document.querySelector("#input-name");
     const inputEmail = document.querySelector("#input-email");
     const inputCpf = document.querySelector("#input-cpf");
