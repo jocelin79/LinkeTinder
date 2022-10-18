@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    var from = document.querySelector("#new-task-form");
+    var form = document.querySelector("#new-task-form");
     var inputNome = document.querySelector("#input-name");
     var inputEmail = document.querySelector("#input-email");
     var inputCpf = document.querySelector("#input-cpf");
@@ -15,9 +15,9 @@ window.addEventListener('load', function () {
     else {
         taskList = [];
     }
-    from === null || from === void 0 ? void 0 : from.addEventListener('submit', function (e) {
+    form === null || form === void 0 ? void 0 : form.addEventListener('submit', function (e) {
         e.preventDefault();
-        //Validação de Input
+        
         var regexpNome = /[A-z]+\s/;
         var regexpEmail = /\w+@\w+\.\w+\.?\w+?/;
         var regexpCpf = /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\.?\-?[0-9]{2}/;
