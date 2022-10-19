@@ -2,7 +2,7 @@ import groovy.sql.Sql
 
 class CompetenciaDAO {
  
-  String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
+  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
   String dbUser = 'postgres'
   String dbPassword = 'postgres'
   String dbDriver = 'org.postgresql.Driver'
@@ -37,7 +37,7 @@ class CompetenciaDAO {
  
  boolean remover(Integer id) {
    String deleteSql = 'DELETE FROM competencia WHERE id=?'
-   def params = competencia.getId()
+   def params = id
    sql.execute deleteSql, params
    return true;
   }

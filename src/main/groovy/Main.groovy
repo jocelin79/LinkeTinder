@@ -1,5 +1,3 @@
-import java.text.SimpleDateFormat
-
 static void main(String[] args) {
 
   boolean on = true;

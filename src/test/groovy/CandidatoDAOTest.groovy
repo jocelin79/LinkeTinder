@@ -4,37 +4,21 @@ import org.junit.jupiter.api.Test
 
 class CandidatoDAOTest extends GroovyTestCase{
 
-	CandidatoDAO candidatoDAO
-
-	@Test
-	void testListar() {
-		candidatoDAO = new CandidatoDAO()
-
-		String saida = parser.executar('5,5,F,F,F,F,C')
-		assertEquals('8', saida)
-	}
+	CandidatoDAO candidatoDAO = new CandidatoDAO()
   
   @Test
 	void testInserir() {
-		candidatoDAO = new CandidatoDAO()
-
-		String saida = parser.executar('5,5,F,F,F,F,C')
-		assertEquals('8', saida)
-	}
-  
-  @Test
-	void testAlterar() {
-		candidatoDAO = new CandidatoDAO()
-
-		String saida = parser.executar('5,5,F,F,F,F,C')
-		assertEquals('8', saida)
-	}
-  
-  @Test
-	void testRemover() {
-		candidatoDAO = new CandidatoDAO()
-
-		String saida = parser.executar('5,5,F,F,F,F,C')
-		assertEquals('8', saida)
-	}
-}
+	  List listaInicialDeCandidatos = candidatoDAO.listar()
+	  Candidato candidato = new Candidato('Teste', 'Teste', '1996-09-26',
+			  'mario@nintendo.com', '11122233345', 'Brasil', '99090900',
+			  'jogador de LOL', 'mario123')
+	  candidatoDAO.inserir(candidato)
+	  ArrayList<Candidato> listaFinalDeCandidatos = candidatoDAO.listar()
+	  Integer tamanhaDaListaInicial = listaInicialDeCandidatos.size()
+	  Integer tamanhoDaListaFinal = listaFinalDeCandidatos.size()
+	  assertEquals(tamanhaDaListaInicial + 1, tamanhoDaListaFinal)
+	  Integer indiceUltimoElemento = tamanhoDaListaFinal - 1
+	  Integer idUltimoElemento = listaFinalDeCandidatos[indiceUltimoElemento].id
+	  candidatoDAO.remover(idUltimoElemento)
+  	}
+  }

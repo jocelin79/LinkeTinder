@@ -2,7 +2,7 @@ import groovy.sql.Sql
 
 class EmpresaDAO {
  
-  String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
+  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
   String bdUser = 'postgres'
   String bdPassword = 'postgres'
   String bdDriver = 'org.postgresql.Driver'
@@ -42,7 +42,7 @@ class EmpresaDAO {
  
  boolean remover(Integer id) {
    String deleteSql = 'DELETE FROM empresa WHERE id=?'
-   def params = empresa.getId()
+   def params = id
    sql.execute deleteSql, params
    return true;
   }
