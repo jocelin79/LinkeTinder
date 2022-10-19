@@ -1,5 +1,5 @@
 @groovy.transform.ToString
-class Candidato extends Pessoa{
+class Candidato {
     Integer id
     String nome, sobrenome, data_nascimento, email, cpf, pais_onde_reside, cep, descricao, senha
 

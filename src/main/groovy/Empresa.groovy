@@ -1,5 +1,5 @@
 @groovy.transform.ToString
-class Empresa extends Pessoa{
+class Empresa {
    Integer id
    String nome, email, cnpj, pais_onde_reside, descricao, cep, senha
 
