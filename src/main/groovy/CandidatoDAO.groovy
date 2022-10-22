@@ -1,6 +1,6 @@
 import groovy.sql.Sql
 
-class CandidatoDAO {
+class CandidatoDAO implements ICandidatoDAO{
 
   String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
   String bdUser = 'postgres'
@@ -29,24 +29,21 @@ class CandidatoDAO {
     return retorno
   }
   
-  boolean inserir(Candidato candidato) {
+  void inserir(Candidato candidato) {
    String insertSql = 'INSERT INTO candidato(nome, sobrenome, data_nascimento, email, cpf, pais_onde_reside, cep, descricao, senha) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)'
    def params = [candidato.getNome(), candidato.getSobrenome(), candidato.getData_nascimento(), candidato.getEmail(), candidato.getCpf(), candidato.getPais_onde_reside(), candidato.getCep(), candidato.getDescricao(), candidato.getSenha()]
    sql.execute insertSql, params
-   return true;
   }
  
- boolean alterar(Candidato candidato) {
+ void alterar(Candidato candidato) {
    String updateSql = 'UPDATE candidato SET nome=?, sobrenome=?, data_nascimento=?, email=?, cpf=?, pais_onde_reside=?, cep=?, descricao=?, senha=? WHERE id=?'
    def params = [candidato.getNome(), candidato.getSobrenome(), candidato.getData_nascimento(), candidato.getEmail(), candidato.getCpf(), candidato.getPais_onde_reside(), candidato.getCep(), candidato.getDescricao(), candidato.getSenha(), candidato.getId()]
    sql.execute updateSql, params
-   return true;
   }
  
- boolean remover(Integer id) {
+ void remover(Integer id) {
    String deleteSql = 'DELETE FROM candidato WHERE id=?'
-   def params = id
+   Integer params = id
    sql.execute deleteSql, params
-   return true
   }
 }

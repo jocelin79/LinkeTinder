@@ -1,6 +1,6 @@
 import groovy.sql.Sql
 
-class EmpresaDAO {
+class EmpresaDAO implements IEmpresaDAO{
  
   String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
   String bdUser = 'postgres'
@@ -26,24 +26,21 @@ class EmpresaDAO {
     return retorno
   }
   
-  boolean inserir(Empresa empresa) {
+  void inserir(Empresa empresa) {
    String insertSql = 'INSERT INTO empresa(nome, cnpj, email, pais_onde_reside, cep, descricao, senha) VALUES(?, ?, ?, ?, ?, ?, ?)'
    def params = [empresa.getNome(), empresa.getCnpj(), empresa.getEmail(), empresa.getPais_onde_reside(), empresa.getCep(), empresa.getDescricao(), empresa.getSenha()]
    sql.execute insertSql, params
-   return true;
   }
  
- boolean alterar(Empresa empresa) {
+ void alterar(Empresa empresa) {
    String updateSql = 'UPDATE empresa SET nome=?, cnpj=?, email=?, pais_onde_reside=?, cep=?, descricao=?, senha=? WHERE id=?'
    def params = [empresa.getNome(), empresa.getCnpj(), empresa.getEmail(), empresa.getPais_onde_reside(), empresa.getCep(), empresa.getDescricao(), empresa.getSenha(), empresa.getId()]
    sql.execute updateSql, params
-   return true;
   }
  
- boolean remover(Integer id) {
+ void remover(Integer id) {
    String deleteSql = 'DELETE FROM empresa WHERE id=?'
-   def params = id
+   Integer params = id
    sql.execute deleteSql, params
-   return true;
   }
 }

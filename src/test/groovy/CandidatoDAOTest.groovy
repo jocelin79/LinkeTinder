@@ -22,3 +22,5 @@ class CandidatoDAOTest extends GroovyTestCase{
 	  candidatoDAO.remover(idUltimoElemento)
   	}
   }
+
+

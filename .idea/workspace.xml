@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Testes criados">
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Candidato.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Candidato.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Empresa.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Empresa.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/InterfacePessoa.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/ListTest.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Pessoa.groovy" beforeDir="false" />
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Refetaoração das classes">
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/ICandidatoDAO.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/IEmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Groovy.Main">
+  <component name="RunManager" selected="Gradle.CandidatoDAOTest">
     <configuration name="CandidatoDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CandidatoDAOTest" />
         <item itemvalue="Groovy.Main" />
         <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
         <item itemvalue="Gradle.CandidatoDAOTest.testInserir" />
-        <item itemvalue="Gradle.CandidatoDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666190817239</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refetaoração das classes">
+      <created>1666199581762</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666199581762</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +233,8 @@
     <MESSAGE value="Testes implementados" />
     <MESSAGE value="implatanção objetos DAO" />
     <MESSAGE value="Testes criados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testes criados" />
+    <MESSAGE value="Refetaoração das classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refetaoração das classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
