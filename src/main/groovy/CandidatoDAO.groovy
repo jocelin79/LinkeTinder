@@ -2,14 +2,15 @@ import groovy.sql.Sql
 
 class CandidatoDAO implements ICandidatoDAO{
 
-  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
-  String bdUser = 'postgres'
-  String bdPassword = 'postgres'
-  String bdDriver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, bdUser, bdPassword, bdDriver)
+  private IConnection _connection
+
+  CandidatoDAO(IConnection connection) {
+    _connection = connection
+  }
 
   List<Candidato> listar() {
-    List<Candidato> retorno = new ArrayList<>();
+    List<Candidato> retorno = new ArrayList<>()
+    Sql sql = _connection.connecting()
     sql.query('SELECT * FROM candidato') { resultSet ->
       while (resultSet.next()) {
         Candidato candidato = new Candidato()
@@ -30,18 +31,21 @@ class CandidatoDAO implements ICandidatoDAO{
   }
   
   void inserir(Candidato candidato) {
+    Sql sql = _connection.connecting()
    String insertSql = 'INSERT INTO candidato(nome, sobrenome, data_nascimento, email, cpf, pais_onde_reside, cep, descricao, senha) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)'
    def params = [candidato.getNome(), candidato.getSobrenome(), candidato.getData_nascimento(), candidato.getEmail(), candidato.getCpf(), candidato.getPais_onde_reside(), candidato.getCep(), candidato.getDescricao(), candidato.getSenha()]
    sql.execute insertSql, params
   }
  
  void alterar(Candidato candidato) {
+   Sql sql = _connection.connecting()
    String updateSql = 'UPDATE candidato SET nome=?, sobrenome=?, data_nascimento=?, email=?, cpf=?, pais_onde_reside=?, cep=?, descricao=?, senha=? WHERE id=?'
    def params = [candidato.getNome(), candidato.getSobrenome(), candidato.getData_nascimento(), candidato.getEmail(), candidato.getCpf(), candidato.getPais_onde_reside(), candidato.getCep(), candidato.getDescricao(), candidato.getSenha(), candidato.getId()]
    sql.execute updateSql, params
   }
- 
+
  void remover(Integer id) {
+   Sql sql = _connection.connecting()
    String deleteSql = 'DELETE FROM candidato WHERE id=?'
    Integer params = id
    sql.execute deleteSql, params

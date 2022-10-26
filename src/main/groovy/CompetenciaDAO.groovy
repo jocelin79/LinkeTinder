@@ -1,15 +1,16 @@
 import groovy.sql.Sql
 
-class CompetenciaDAO {
- 
-  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
-  String dbUser = 'postgres'
-  String dbPassword = 'postgres'
-  String dbDriver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, dbUser, dbPassword, dbDriver)
+class CompetenciaDAO implements ICompetenciaDAO{
+
+    private IConnection _connection
+
+    CompetenciaDAO(IConnection connection) {
+        _connection = connection
+    }
 
   List<Competencia> listar() {
-    List<Competencia> retorno = new ArrayList<>();
+    List<Competencia> retorno = new ArrayList<>()
+      Sql sql = _connection.connecting()
     sql.query('SELECT * FROM competencia') { resultSet ->
       while (resultSet.next()) {
         Competencia competencia = new Competencia()
@@ -21,24 +22,24 @@ class CompetenciaDAO {
     return retorno
   }
   
-  boolean inserir(Competencia competencia) {
+  void inserir(Competencia competencia) {
+      Sql sql = _connection.connecting()
    String insertSql = 'INSERT INTO competencia(descricao) VALUES(?)'
    def params = [competencia.getDescricao()]
    sql.execute insertSql, params
-   return true;
   }
  
- boolean alterar(Competencia competencia) {
+ void alterar(Competencia competencia) {
+     Sql sql = _connection.connecting()
    String updateSql = 'UPDATE competencia SET descricao=? WHERE id=?'
    def params = [competencia.getDescricao(), competencia.getId()]
    sql.execute updateSql, params
-   return true;
   }
  
- boolean remover(Integer id) {
+ void remover(Integer id) {
+     Sql sql = _connection.connecting()
    String deleteSql = 'DELETE FROM competencia WHERE id=?'
    def params = id
    sql.execute deleteSql, params
-   return true;
   }
 }

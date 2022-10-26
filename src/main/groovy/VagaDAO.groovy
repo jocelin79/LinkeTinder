@@ -1,15 +1,16 @@
 import groovy.sql.Sql
 
-class VagaDAO {
- 
-  String url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/linketinderdb'
-  String dbUser = 'postgres'
-  String dbPassword = 'postgres'
-  String dbDriver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, dbUser, dbPassword, dbDriver)
+class VagaDAO implements IVagaDAO{
+
+    private IConnection _connection
+
+    CandidatoDAO(IConnection connection) {
+        _connection = connection
+    }
 
   List<Vaga> listar() {
-    List<Vaga> retorno = new ArrayList<>();
+    List<Vaga> retorno = new ArrayList<>()
+      Sql sql = _connection.connecting()
     sql.query('SELECT * FROM vaga') { resultSet ->
       while (resultSet.next()) {
         Vaga vaga = new Vaga()
@@ -23,24 +24,24 @@ class VagaDAO {
     return retorno
   }
   
-  boolean inserir(Vaga vaga) {
+  void inserir(Vaga vaga) {
+      Sql sql = _connection.connecting()
    String insertSql = 'INSERT INTO vaga(descricao, local_da_vaga, idEmpresa) VALUES(?, ?, ?)'
    def params = [vaga.getDescricao(), vaga.getLocal_da_vaga(), vaga.getIdEmpresa()]
    sql.execute insertSql, params
-   return true;
   }
  
-  boolean alterar(Vaga vaga) {
+  void alterar(Vaga vaga) {
+      Sql sql = _connection.connecting()
    String updateSql = 'UPDATE vaga SET descricao=?, local_da_vaga=?, idEmpresa=? WHERE id=?'
    def params = [vaga.getDescricao(), vaga.getLocal_da_vaga(), vaga.getIdEmpresa(), vaga.getId()]
    sql.execute updateSql, params
-   return true;
   }
  
-  boolean remover(Integer id) {
+  void remover(Integer id) {
+      Sql sql = _connection.connecting()
    String deleteSql = 'DELETE FROM vaga WHERE id=?'
-   def params = vaga.getId()
+   def params = id
    sql.execute deleteSql, params
-   return true;
   }
 }

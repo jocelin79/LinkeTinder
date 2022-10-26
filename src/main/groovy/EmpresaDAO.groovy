@@ -1,15 +1,16 @@
 import groovy.sql.Sql
 
 class EmpresaDAO implements IEmpresaDAO{
- 
-  String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
-  String bdUser = 'postgres'
-  String bdPassword = 'postgres'
-  String bdDriver = 'org.postgresql.Driver'
-  Sql sql = Sql.newInstance(url, bdUser, bdPassword, bdDriver)
+
+  private IConnection _connection
+
+  EmpresaDAO(IConnection connection) {
+    _connection = connection
+  }
 
   List<Empresa> listar() {
-    List<Empresa> retorno = new ArrayList<>();
+    List<Empresa> retorno = new ArrayList<>()
+    Sql sql = _connection.connecting()
     sql.query('SELECT * FROM empresa') { resultSet ->
       while (resultSet.next()) {
         Empresa empresa = new Empresa()
@@ -27,18 +28,21 @@ class EmpresaDAO implements IEmpresaDAO{
   }
   
   void inserir(Empresa empresa) {
+    Sql sql = _connection.connecting()
    String insertSql = 'INSERT INTO empresa(nome, cnpj, email, pais_onde_reside, cep, descricao, senha) VALUES(?, ?, ?, ?, ?, ?, ?)'
    def params = [empresa.getNome(), empresa.getCnpj(), empresa.getEmail(), empresa.getPais_onde_reside(), empresa.getCep(), empresa.getDescricao(), empresa.getSenha()]
    sql.execute insertSql, params
   }
  
  void alterar(Empresa empresa) {
+   Sql sql = _connection.connecting()
    String updateSql = 'UPDATE empresa SET nome=?, cnpj=?, email=?, pais_onde_reside=?, cep=?, descricao=?, senha=? WHERE id=?'
    def params = [empresa.getNome(), empresa.getCnpj(), empresa.getEmail(), empresa.getPais_onde_reside(), empresa.getCep(), empresa.getDescricao(), empresa.getSenha(), empresa.getId()]
    sql.execute updateSql, params
   }
  
  void remover(Integer id) {
+   Sql sql = _connection.connecting()
    String deleteSql = 'DELETE FROM empresa WHERE id=?'
    Integer params = id
    sql.execute deleteSql, params

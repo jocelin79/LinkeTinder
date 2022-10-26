@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test
 
 class EmpresaDAOTest extends GroovyTestCase{
 
-	EmpresaDAO empresaDAO = new EmpresaDAO()
+	EmpresaDAO empresaDAO = new EmpresaDAO(new Connection())
   
   @Test
 	void testInserir() {

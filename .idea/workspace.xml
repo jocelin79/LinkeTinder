@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Refetaoração das classes">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/ICandidatoDAO.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/IEmpresaDAO.groovy" afterDir="false" />
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="aplicação dos principaios SOLID">
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/Connection.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/ICompetenciaDAO.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/IConnection.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/IVagaDAO.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" afterDir="false" />
     </list>
@@ -25,7 +29,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,7 +60,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CandidatoDAOTest">
+  <component name="RunManager" selected="Gradle.EmpresaDAOTest">
     <configuration name="CandidatoDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +107,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="EmpresaDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;EmpresaDAOTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="EmpresaDAOTest.testInserir" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,6 +166,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EmpresaDAOTest" />
         <item itemvalue="Gradle.CandidatoDAOTest" />
         <item itemvalue="Groovy.Main" />
         <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
@@ -212,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666199581762</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="aplicação dos principaios SOLID">
+      <created>1666438938134</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666438938134</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +268,8 @@
     <MESSAGE value="implatanção objetos DAO" />
     <MESSAGE value="Testes criados" />
     <MESSAGE value="Refetaoração das classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refetaoração das classes" />
+    <MESSAGE value="aplicação dos principaios SOLID" />
+    <option name="LAST_COMMIT_MESSAGE" value="aplicação dos principaios SOLID" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
