@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 
 class CandidatoDAOTest extends GroovyTestCase{
 
-	CandidatoDAO candidatoDAO = new CandidatoDAO(new Connection())
+	CandidatoDAO candidatoDAO = new CandidatoDAO(new PostgreConnection())
   
   @Test
 	void testInserir() {

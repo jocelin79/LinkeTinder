@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="aplicação dos principaios SOLID">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/Connection.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/ICompetenciaDAO.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/IConnection.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/IVagaDAO.groovy" afterDir="false" />
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Injeçlão de Dependencias classes DAO">
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/ConnectionFactory.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/PostgreConnectionProduct.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Connection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PostgreConnection.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" afterDir="false" />
@@ -60,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EmpresaDAOTest">
+  <component name="RunManager" selected="Gradle.CandidatoDAOTest">
     <configuration name="CandidatoDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -166,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EmpresaDAOTest" />
         <item itemvalue="Gradle.CandidatoDAOTest" />
+        <item itemvalue="Gradle.EmpresaDAOTest" />
         <item itemvalue="Groovy.Main" />
         <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
         <item itemvalue="Gradle.CandidatoDAOTest.testInserir" />
@@ -246,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666438938134</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Injeçlão de Dependencias classes DAO">
+      <created>1666823245936</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666823245936</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +272,8 @@
     <MESSAGE value="Testes criados" />
     <MESSAGE value="Refetaoração das classes" />
     <MESSAGE value="aplicação dos principaios SOLID" />
-    <option name="LAST_COMMIT_MESSAGE" value="aplicação dos principaios SOLID" />
+    <MESSAGE value="Injeçlão de Dependencias classes DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Injeçlão de Dependencias classes DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

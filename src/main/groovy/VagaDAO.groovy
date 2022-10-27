@@ -4,7 +4,7 @@ class VagaDAO implements IVagaDAO{
 
     private IConnection _connection
 
-    CandidatoDAO(IConnection connection) {
+    VagaDAO(IConnection connection) {
         _connection = connection
     }
 

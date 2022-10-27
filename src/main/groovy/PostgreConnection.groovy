@@ -1,6 +1,6 @@
 import groovy.sql.Sql
 
-class Connection implements IConnection {
+class PostgreConnection implements IConnection {
 
     String url = 'jdbc:postgresql://localhost:5432/linketinderdb'
     String bdUser = 'postgres'
