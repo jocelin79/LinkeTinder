@@ -1,6 +1,7 @@
 class PostgreConnectionProduct extends ConnectionFactory{
     @Override
     protected IConnection createConnection() {
-        return new PostgreConnection()
+        PostgreConnection postgreConnection = PostgreConnection.getInstance()
+        return postgreConnection
     }
 }
