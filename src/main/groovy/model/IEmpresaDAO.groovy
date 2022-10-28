@@ -1,3 +1,5 @@
+package model
+
 interface IEmpresaDAO {
     List<Empresa> listar()
     void inserir(Empresa empresa)

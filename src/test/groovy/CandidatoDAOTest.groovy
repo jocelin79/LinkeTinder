@@ -1,4 +1,8 @@
 import groovy.test.GroovyTestCase
+import model.Candidato
+import model.CandidatoDAO
+import model.IConnection
+import model.PostgreConnectionProduct
 import org.junit.jupiter.api.Test
 
 

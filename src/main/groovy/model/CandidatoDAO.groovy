@@ -1,4 +1,7 @@
+package model
+
 import groovy.sql.Sql
+import model.Candidato
 
 class CandidatoDAO implements ICandidatoDAO{
 

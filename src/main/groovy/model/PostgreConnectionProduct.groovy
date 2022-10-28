@@ -1,3 +1,5 @@
+package model
+
 class PostgreConnectionProduct extends ConnectionFactory{
     @Override
     protected IConnection createConnection() {

@@ -1,3 +1,5 @@
+package model
+
 @groovy.transform.ToString
 class Competencia {
     Integer id;

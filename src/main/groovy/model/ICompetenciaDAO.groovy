@@ -1,3 +1,5 @@
+package model
+
 interface ICompetenciaDAO {
     List<Competencia> listar()
     void inserir(Competencia competencia)

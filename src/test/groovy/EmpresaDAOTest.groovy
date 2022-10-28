@@ -1,10 +1,14 @@
 import groovy.test.GroovyTestCase
+import model.Empresa
+import model.EmpresaDAO
+import model.IConnection
+import model.PostgreConnectionProduct
 import org.junit.jupiter.api.Test
 
 class EmpresaDAOTest extends GroovyTestCase{
 
 	PostgreConnectionProduct postgreConnectionProduct = new PostgreConnectionProduct()
-	IConnection postgreConnection = postgreConnectionProduct.createConnection()
+    IConnection postgreConnection = postgreConnectionProduct.createConnection()
 	EmpresaDAO empresaDAO = new EmpresaDAO(postgreConnection)
   
   @Test

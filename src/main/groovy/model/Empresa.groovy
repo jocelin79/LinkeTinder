@@ -1,3 +1,5 @@
+package model
+
 @groovy.transform.ToString
 class Empresa {
    Integer id

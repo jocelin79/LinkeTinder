@@ -1,3 +1,5 @@
+package model
+
 @groovy.transform.ToString
 class Vaga {
     String descricao, local_da_vaga;

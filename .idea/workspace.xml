@@ -4,10 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Factory of Connections Finished">
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Singleton Parttern Create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PostgreConnection.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnectionProduct.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PostgreConnectionProduct.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/cadastroDeCandidato.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cadastroDeCandidato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/cadastroDeEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cadastroDeEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/perfilCandidato.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/perfilCandidato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/perfilEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/perfilEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Candidato.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Candidato.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/CandidatoDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Competencia.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Competencia.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/CompetenciaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/ConnectionFactory.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ConnectionFactory.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Empresa.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Empresa.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/EmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/ICandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ICandidatoDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/ICompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ICompetenciaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/IConnection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IConnection.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/IEmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IEmpresaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/IVagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IVagaDAO.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Main.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/PostgreConnection.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnectionProduct.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/PostgreConnectionProduct.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Vaga.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Vaga.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/VagaDAO.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" afterDir="false" />
     </list>
@@ -54,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EmpresaDAOTest">
+  <component name="RunManager" selected="Groovy.Main">
     <configuration name="CandidatoDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,9 +180,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EmpresaDAOTest" />
-        <item itemvalue="Gradle.CandidatoDAOTest" />
         <item itemvalue="Groovy.Main" />
+        <item itemvalue="Gradle.CandidatoDAOTest" />
+        <item itemvalue="Gradle.EmpresaDAOTest" />
         <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
         <item itemvalue="Gradle.CandidatoDAOTest.testInserir" />
       </list>
@@ -261,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666917200617</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Singleton Parttern Create">
+      <created>1666953768189</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666953768189</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +314,8 @@
     <MESSAGE value="Injeçlão de Dependencias classes DAO" />
     <MESSAGE value="Factory of Connections create" />
     <MESSAGE value="Factory of Connections Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Factory of Connections Finished" />
+    <MESSAGE value="Singleton Parttern Create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Singleton Parttern Create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

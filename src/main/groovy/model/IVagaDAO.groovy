@@ -1,3 +1,5 @@
+package model
+
 interface IVagaDAO {
     List<Vaga> listar()
     void inserir(Vaga vaga)
