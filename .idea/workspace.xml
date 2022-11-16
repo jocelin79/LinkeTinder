@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="diretorios refatorados">
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="end-points criados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/CandidatoController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/CandidatoController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/CompetenciaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/CompetenciaController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/EmpresaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/EmpresaController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/VagaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/VagaController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +336,7 @@
       <workItem from="1668605146872" duration="536000" />
       <workItem from="1668616258922" duration="179000" />
       <workItem from="1668616773194" duration="1331000" />
-      <workItem from="1668620569855" duration="2625000" />
+      <workItem from="1668620569855" duration="3820000" />
     </task>
     <task id="LOCAL-00001" summary="all clear">
       <created>1662290100653</created>
@@ -460,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668616899631</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="end-points criados">
+      <created>1668623575442</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668623575442</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +509,8 @@
     <MESSAGE value="MVC pattern implement" />
     <MESSAGE value="Endpoint &quot;/candidatos&quot; criado" />
     <MESSAGE value="diretorios refatorados" />
-    <option name="LAST_COMMIT_MESSAGE" value="diretorios refatorados" />
+    <MESSAGE value="end-points criados" />
+    <option name="LAST_COMMIT_MESSAGE" value="end-points criados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
