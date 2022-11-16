@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import model.EmpresaDAO
 import model.IConnection
 import model.PostgreConnectionProduct
+import model.Vaga
 import model.VagaDAO
 
 import javax.servlet.ServletException
@@ -39,5 +40,23 @@ class VagaController extends HttpServlet {
         resp.setContentType("application/json")
         resp.setCharacterEncoding("utf-8")
         resp.setStatus(200)
+
+        String descricao = req.getParameter("descricao")
+        String local_da_vaga = req.getParameter("local_da_vaga")
+        Integer idEmpresa = req.getParameter("idEmpresa").toInteger()
+
+        Vaga vaga = new Vaga()
+        vaga.setDescricao(descricao)
+        vaga.setLocal_da_vaga(local_da_vaga)
+        vaga.setIdEmpresa(idEmpresa)
+
+        PostgreConnectionProduct postgreConnectionProduct = new PostgreConnectionProduct()
+        IConnection postgreConnection = postgreConnectionProduct.createConnection()
+        VagaDAO vagaDAO = new VagaDAO(postgreConnection)
+        vagaDAO.inserir(vaga)
+
+        PrintWriter pw = resp.getWriter()
+        pw.print("Vaga cadastrado com sucesso!")
+        pw.flush()
     }
 }

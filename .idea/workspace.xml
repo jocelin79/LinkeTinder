@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Endpoint &quot;/candidatos&quot; criado">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/controller/CompetenciaController.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/controller/EmpresaController.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/controller/VagaController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/CandidatoController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/CandidatoController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/controller/VagaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/controller/VagaController.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +209,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat Server " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : org.example : LinkeTinder-1.0-SNAPSHOT.war">
@@ -331,7 +329,12 @@
       <workItem from="1668556423424" duration="676000" />
       <workItem from="1668557273636" duration="237000" />
       <workItem from="1668557680942" duration="3040000" />
-      <workItem from="1668561189739" duration="1022000" />
+      <workItem from="1668561189739" duration="1758000" />
+      <workItem from="1668596715828" duration="515000" />
+      <workItem from="1668597322453" duration="2032000" />
+      <workItem from="1668601514107" duration="985000" />
+      <workItem from="1668605146872" duration="536000" />
+      <workItem from="1668616258922" duration="179000" />
     </task>
     <task id="LOCAL-00001" summary="all clear">
       <created>1662290100653</created>
@@ -438,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668559672355</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Endpoint &quot;/candidatos&quot; criado">
+      <created>1668562884147</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668562884147</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
