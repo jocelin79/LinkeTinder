@@ -1,6 +1,8 @@
 package controller
 
+import com.google.gson.Gson
 import model.CandidatoDAO
+import model.EmpresaDAO
 import model.IConnection
 import model.PostgreConnectionProduct
 
@@ -10,10 +12,8 @@ import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-import com.google.gson.Gson
-
-@WebServlet (urlPatterns = "/candidatos")
-class CandidatoController extends HttpServlet {
+@WebServlet (urlPatterns = "/empresas")
+class EmpresaController extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
     Gson gson = new Gson()
@@ -26,11 +26,11 @@ class CandidatoController extends HttpServlet {
 
         PostgreConnectionProduct postgreConnectionProduct = new PostgreConnectionProduct()
         IConnection postgreConnection = postgreConnectionProduct.createConnection()
-        CandidatoDAO candidatoDAO = new CandidatoDAO(postgreConnection)
-        List candidatos = candidatoDAO.listar()
+        EmpresaDAO empresaDAO = new EmpresaDAO(postgreConnection)
+        List empresas = empresaDAO.listar()
 
         PrintWriter pw = resp.getWriter()
-        pw.print(gson.toJson(candidatos))
+        pw.print(gson.toJson(empresas))
         pw.flush()
     }
 }
