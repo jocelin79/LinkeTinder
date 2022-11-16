@@ -56,7 +56,7 @@ class VagaController extends HttpServlet {
         vagaDAO.inserir(vaga)
 
         PrintWriter pw = resp.getWriter()
-        pw.print("Vaga cadastrado com sucesso!")
+        pw.print("Vaga cadastrada com sucesso!")
         pw.flush()
     }
 }
