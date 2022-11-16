@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="arquivo_war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="Singleton Parttern Create">
+    <list default="true" id="cf164bfc-76f1-47bd-acd7-6a240310a1d2" name="Changes" comment="MVC pattern implement">
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/controller/CandidatoController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/cadastroDeCandidato.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cadastroDeCandidato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/cadastroDeEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cadastroDeEmpresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/perfilCandidato.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/perfilCandidato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/perfilEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/perfilEmpresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Candidato.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Candidato.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/CandidatoDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Competencia.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Competencia.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/CompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/CompetenciaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/ConnectionFactory.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ConnectionFactory.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Empresa.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Empresa.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/EmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/EmpresaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/ICandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ICandidatoDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/ICompetenciaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/ICompetenciaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/IConnection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IConnection.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/IEmpresaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IEmpresaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/IVagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/IVagaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnection.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/PostgreConnection.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/PostgreConnectionProduct.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/PostgreConnectionProduct.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Vaga.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/Vaga.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/VagaDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/VagaDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/CandidatoDAOTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/EmpresaDAOTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/model/CandidatoDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/CandidatoDAO.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +26,51 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LinkeTinder" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LinkeTinder" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LinkeTinder" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LinkeTinder" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,10 +88,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jocelinnunes/Documentos/Proficional/Programação/projetos/LinkeTinder&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jocelinnunes/Documentos/Proficional/Programação/sistemas/LinkeTinder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Groovy.Main">
+  <component name="RunManager" selected="Tomcat Server.Tomcat Server ">
     <configuration name="CandidatoDAOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -89,29 +123,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;CandidatoDAOTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CandidatoDAOTest.testInserir" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;CandidatoDAOTest.testInserir&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,6 +178,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LinkeTinder [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="LinkeTinder.main" />
       <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/Main.groovy" />
@@ -178,13 +210,108 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat Server " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : LinkeTinder-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/LinkeTinder_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="66cdab99-464f-4a46-a727-a541e86f17c0" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="36497" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : LinkeTinder-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.LinkeTinder [war]" />
+      <item itemvalue="Gradle.CandidatoDAOTest" />
+      <item itemvalue="Gradle.EmpresaDAOTest" />
+      <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
+      <item itemvalue="Groovy.Main" />
+      <item itemvalue="Tomcat Server.Tomcat Server " />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LinkeTinder [war]" />
         <item itemvalue="Groovy.Main" />
         <item itemvalue="Gradle.CandidatoDAOTest" />
         <item itemvalue="Gradle.EmpresaDAOTest" />
         <item itemvalue="Gradle.EmpresaDAOTest.testInserir" />
-        <item itemvalue="Gradle.CandidatoDAOTest.testInserir" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +323,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662236311046</updated>
+      <workItem from="1668459661499" duration="80000" />
+      <workItem from="1668460123731" duration="4352000" />
+      <workItem from="1668465912387" duration="361000" />
+      <workItem from="1668555157814" duration="596000" />
+      <workItem from="1668556423424" duration="676000" />
+      <workItem from="1668557273636" duration="237000" />
+      <workItem from="1668557680942" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="all clear">
       <created>1662290100653</created>
@@ -288,8 +422,30 @@
       <option name="project" value="LOCAL" />
       <updated>1666953768189</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="MVC pattern implement">
+      <created>1666976795541</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976795541</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/listaDeCandidatos.js" />
+        <option value="$PROJECT_DIR$/src/main/groovy/view/cadastrarCandidato.js" />
+        <option value="$PROJECT_DIR$/frontend/cadastrarEmpresa.js" />
+        <option value="$PROJECT_DIR$/src/main/groovy/view/listaDeEmpresas.js" />
+        <option value="$PROJECT_DIR$/frontend/listaDeEmpresas.js" />
+        <option value="$PROJECT_DIR$/src/main/groovy/view/cadastrarEmpresa.js" />
+        <option value="$PROJECT_DIR$/src/main/groovy/view/listaDeCandidatos.js" />
+        <option value="$PROJECT_DIR$/frontend/cadastrarCandidato.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -315,7 +471,8 @@
     <MESSAGE value="Factory of Connections create" />
     <MESSAGE value="Factory of Connections Finished" />
     <MESSAGE value="Singleton Parttern Create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Singleton Parttern Create" />
+    <MESSAGE value="MVC pattern implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC pattern implement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
